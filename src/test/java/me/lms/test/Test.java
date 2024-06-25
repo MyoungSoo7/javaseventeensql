@@ -57,7 +57,7 @@ public class Test {
         Member savedMember = memberRepository.save(member);
 
         // when
-        final ResultActions result = mockMvc.perform(get(url) // 1
+        final ResultActions result = mockMvc.perform(get(url) // perform 메서드는 요청은 전송 하고 , ResultActions 객체를 반환
                 .accept(MediaType.APPLICATION_JSON)); // 2
 
         // then
